@@ -44,11 +44,22 @@ namespace ShootingDice
             CreativeSmackTalkingPlayer CreativeSmackTalker = new CreativeSmackTalkingPlayer();
             CreativeSmackTalker.Name = "CreativeSmackTalkin' Jeremy";
 
-            List<Player> players = new List<Player>() {
-                player1, player2, player3, large, SmackTalker, OneHigher, Human, CreativeSmackTalker
-            };
+            SoreLoserPlayer LooooSeer = new SoreLoserPlayer();
+            LooooSeer.Name = "Loser Lucy";
 
-            PlayMany(players);
+            List<Player> players = new List<Player>() {
+                player1, player2, player3, large, SmackTalker, OneHigher, Human, CreativeSmackTalker, LooooSeer
+            };
+            // SoreLoserPlayer try here
+            try
+            {
+                PlayMany(players);
+            }
+            // SoreLoserPlayer catch here
+            catch
+            {
+                System.Console.WriteLine("A sore loser threw the dice and stomped off!");
+            }
         }
 
         static void PlayMany(List<Player> players)
