@@ -5,14 +5,18 @@ namespace ShootingDice
     public class Player
     {
         public string Name { get; set; }
+
+        // CG: Not inheritable? default DiceSize = 6? Can we override this without using override on LargeDicePlayer?
         public int DiceSize { get; set; } = 6;
 
+        // CG: inheritable
         public virtual int Roll()
         {
             // Return a random number between 1 and DiceSize
             return new Random().Next(DiceSize) + 1;
         }
 
+        // CG: inheritable
         public virtual void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object

@@ -6,5 +6,8 @@ namespace ShootingDice
     public class UpperHalfPlayer
     {
 
+
+
+        // will need to override Roll()
     }
 }

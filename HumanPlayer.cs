@@ -6,5 +6,7 @@ namespace ShootingDice
     public class HumanPlayer
     {
 
+
+        //CG: Do we override and enter our own number?
     }
 }
