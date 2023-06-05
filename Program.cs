@@ -47,15 +47,18 @@ namespace ShootingDice
             SoreLoserPlayer LooooSeer = new SoreLoserPlayer();
             LooooSeer.Name = "Loser Lucy";
 
+            UpperHalfPlayer Youper = new UpperHalfPlayer();
+            Youper.Name = "Youper Mitch";
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, SmackTalker, OneHigher, Human, CreativeSmackTalker, LooooSeer
+                player1, player2, player3, large, SmackTalker, OneHigher, Human, CreativeSmackTalker, LooooSeer, Youper
             };
-            // SoreLoserPlayer try here
+            // SoreLoserPlayer try 
             try
             {
                 PlayMany(players);
             }
-            // SoreLoserPlayer catch here
+            // SoreLoserPlayer catch 
             catch
             {
                 System.Console.WriteLine("A sore loser threw the dice and stomped off!");
