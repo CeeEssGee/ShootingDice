@@ -25,7 +25,7 @@ namespace ShootingDice
             else if (myRoll < otherRoll)
             {
                 Console.WriteLine($"{other.Name} Wins!");
-                // exception SoreLoserPlayer
+                // exception for SoreLoserPlayer
                 throw new Exception("An aritrary error message");
             }
 
